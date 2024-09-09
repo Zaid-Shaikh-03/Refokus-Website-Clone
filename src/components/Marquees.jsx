@@ -66,8 +66,8 @@ function Marquees() {
   ];
   return (
     <div className="bg-zinc-900 pb-20 pt-44">
-      {images.map((item) => (
-        <Marquee imagesUrls={item} />
+      {images.map((item, index) => (
+        <Marquee key={index} imagesUrls={item} />
       ))}
     </div>
   );

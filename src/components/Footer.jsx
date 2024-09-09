@@ -12,7 +12,14 @@ function Footer() {
             <div>
               {["Privacy Policy", "Cookie Policy", "Impressum", "Terms"].map(
                 (elem, index) => (
-                  <a className={`ml-10 ${index===0 && "ml-3"} capitalize text-zinc-600`}>{elem}</a>
+                  <a
+                    key={index}
+                    className={`ml-10 ${
+                      index === 0 && "ml-3"
+                    } capitalize text-zinc-600`}
+                  >
+                    {elem}
+                  </a>
                 )
               )}
             </div>
@@ -21,13 +28,17 @@ function Footer() {
             <div className="w-1/3">
               <h4 className="mb-10 text-zinc-500 capitalize">Socials</h4>
               {["Instagram", "twitter (x?)", "LinkedIn"].map((elem, index) => (
-                <a className="block  mt-2 capitalize text-zinc-600">{elem}</a>
+                <a key={index} className="block  mt-2 capitalize text-zinc-600">
+                  {elem}
+                </a>
               ))}
             </div>
             <div className="w-1/3">
               <h4 className="mb-10 text-zinc-500 capitalize">Sitemap</h4>
               {["Home", "Work", "Careers", "Contect"].map((elem, index) => (
-                <a className="block  mt-2 capitalize text-zinc-300">{elem}</a>
+                <a key={index} className="block  mt-2 capitalize text-zinc-300">
+                  {elem}
+                </a>
               ))}
             </div>
             <div className="w-1/2 flex flex-col items-end">
