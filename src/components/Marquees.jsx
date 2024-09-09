@@ -65,7 +65,7 @@ function Marquees() {
     ],
   ];
   return (
-    <div className="bg-zinc-900 pb-20 pt-52">
+    <div className="bg-zinc-900 pb-20 pt-44">
       {images.map((item) => (
         <Marquee imagesUrls={item} />
       ))}
