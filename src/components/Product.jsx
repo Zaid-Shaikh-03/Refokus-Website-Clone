@@ -14,9 +14,11 @@ function Product({ val, mover, count }) {
         src={val.bgimg}
         alt=""
       />
-      <div className="relative z-10 max-w-screen-xl mx-auto flex items-center justify-between">
-        <h1 className="text-5xl capitalize font-medium">{val.heading}</h1>
-        <div className="dets w-1/3">
+      <div className="relative z-10 max-w-screen-xl  mx-auto flex items-center justify-between">
+        <h1 className="text-5xl capitalize font-medium lg:px-5 xl:px-0">
+          {val.heading}
+        </h1>
+        <div className="dets w-1/3 lg:px-5 xl:px-0">
           <p className="mb-10">{val.description}</p>
           <div className="flex items-center gap-8 opacity-0 group-hover:opacity-100">
             {val.live && <Button />}

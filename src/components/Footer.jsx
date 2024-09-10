@@ -41,8 +41,8 @@ function Footer() {
                 </a>
               ))}
             </div>
-            <div className="w-1/2 flex flex-col items-end">
-              <p className="text-right mt-14">
+            <div className="lg:w-1/3 xl:w-1/2 flex flex-col items-start xl:items-end pr-3 xl:pr-0">
+              <p className="text-left xl:text-right xl:mt-14">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
                 at?
               </p>

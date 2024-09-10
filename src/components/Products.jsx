@@ -77,7 +77,6 @@ function Products() {
   ];
 
   const [pos, setPos] = useState(0);
-  const [vidPos, setVidPos] = useState(0);
   const mover = (val) => {
     setPos(val * 23);
   };
