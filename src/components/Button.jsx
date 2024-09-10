@@ -1,11 +1,31 @@
-import React from "react";
+import { easeInOut, motion } from "framer-motion";
+import React, { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 
 function Button({ title = "Get Started" }) {
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="w-40 px-4 py-2 bg-zinc-100 text-black rounded-full flex items-center justify-between ">
-      <span className="text-sm font-medium">{title}</span>
-      <MdArrowOutward />
+    <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="primary-btn h-8 w-34 px-4 py-4 bg-white text-black flex flex-col items-center overflow-hidden rounded-full"
+    >
+      <motion.div
+        animate={{ y: isHovered ? "-200%" : "-50%" }}
+        transition={{ ease: easeInOut }}
+        className="flex translate-y-full w-full items-center justify-between gap-4"
+      >
+        <span className="text-sm">{title}</span>
+        <MdArrowOutward size={".7em"} />
+      </motion.div>
+      <motion.div
+        animate={{ y: isHovered ? "-150%" : "0%" }}
+        transition={{ ease: easeInOut }}
+        className="flex translate-y-full w-full items-center justify-between gap-4"
+      >
+        <span className="text-sm">{title}</span>
+        <MdArrowOutward size={".7em"} />
+      </motion.div>
     </div>
   );
 }

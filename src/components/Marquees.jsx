@@ -65,10 +65,15 @@ function Marquees() {
     ],
   ];
   return (
-    <div className="bg-zinc-900 pb-20 pt-44">
+    <div className="bg-zinc-900 pb-20 pt-44 w-full relative overflow-hidden ">
       {images.map((item, index) => (
-        <Marquee key={index} imagesUrls={item} />
+        <Marquee
+          key={index}
+          direction={index === 0 ? "left" : "right"}
+          imagesUrls={item}
+        />
       ))}
+      <div className="absolute top-1/2 -translate-y-1/2 left-0 h-2/3 w-full bg-gradient-to-r from-[#161618] via-transparent to-[#161618]"></div>
     </div>
   );
 }

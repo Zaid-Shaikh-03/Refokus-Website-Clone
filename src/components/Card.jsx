@@ -1,10 +1,15 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { IoMdArrowForward } from "react-icons/io";
 
-function Card({ width, start, para, hover = "none", heading1, heading2 }) {
+function Card({ width, start, para, hover = "false", heading1, heading2 }) {
   return (
-    <div
-      className={`bg-zinc-800 p-5 rounded-xl min-h-[30rem] flex flex-col justify-between hover:bg-[${hover}] ${width}`}
+    <motion.div
+      whileHover={{
+        backgroundColor: hover === "true" ? "#7443FF" : "#3E3E46",
+        padding: "25px",
+      }}
+      className={`bg-zinc-800 p-5 rounded-xl min-h-[30rem] flex flex-col justify-between  ${width}`}
     >
       <div className="w-full">
         <div className="w-full flex justify-between items-center">
@@ -30,7 +35,7 @@ function Card({ width, start, para, hover = "none", heading1, heading2 }) {
           </p>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

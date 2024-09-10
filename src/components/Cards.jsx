@@ -9,7 +9,6 @@ function Cards() {
           width={"basis-1/3"}
           start={false}
           para={true}
-          hover={"#3E3E46"}
           heading1={"Up next news"}
           heading2={"Insights and behind the senses"}
         />
@@ -17,7 +16,7 @@ function Cards() {
           width={"basis-2/3"}
           start={true}
           para={false}
-          hover={"#7443FF"}
+          hover={"true"}
           heading1={"get in touch"}
           heading2={"Let's get to it, together"}
         />
