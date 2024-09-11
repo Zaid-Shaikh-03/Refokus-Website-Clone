@@ -82,7 +82,7 @@ function Work() {
   return (
     <div className="w-full mt-10">
       <div className="relative max-w-screen-xl mx-auto text-center">
-        <h1 className="text-[30vw] leading-none tracking-tight font-medium select-none ">
+        <h1 className="text-[30vw] leading-none tracking-tight font-medium select-none py-12 sm:py-0">
           work
         </h1>
         <div className="absolute top-0  w-full h-full">
@@ -91,7 +91,7 @@ function Work() {
               elem.isActive && (
                 <img
                   key={index}
-                  className="absolute w-60 rounded-lg -translate-x-[50%] -translate-y-[50%]"
+                  className="absolute w-40 sm:w-60 rounded-lg -translate-x-[50%] -translate-y-[50%]"
                   style={{ top: elem.top, left: elem.left }}
                   src={elem.url}
                   alt=""

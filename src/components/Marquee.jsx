@@ -3,12 +3,12 @@ import React from "react";
 
 function Marquee({ imagesUrls, direction }) {
   return (
-    <div className="flex w-full py-8 gap-20 whitespace-nowrap overflow-x-hidden">
+    <div className="flex w-full py-4 sm:py-8 gap-12 sm:gap-20 whitespace-nowrap overflow-x-hidden">
       <motion.div
         initial={{ x: direction === "left" ? "0" : "-100%" }}
         animate={{ x: direction === "left" ? "-100%" : "0" }}
         transition={{ ease: "linear", duration: 40, repeat: Infinity }}
-        className="flex flex-shrink-0 gap-20 pr-20"
+        className="flex flex-shrink-0 gap-8 sm:gap-20 pr-8 sm:pr-20"
       >
         {imagesUrls.map((url, index) => (
           <img key={index} src={url} alt="" className="" />
@@ -18,7 +18,7 @@ function Marquee({ imagesUrls, direction }) {
         initial={{ x: direction === "left" ? "0" : "-100%" }}
         animate={{ x: direction === "left" ? "-100%" : "0" }}
         transition={{ ease: "linear", duration: 40, repeat: Infinity }}
-        className="flex flex-shrink-0 gap-20 pr-20"
+        className="flex flex-shrink-0 gap-8 sm:gap-20 pr-8 sm:pr-20"
       >
         {imagesUrls.map((url, index) => (
           <img key={index} src={url} alt="" className="" />

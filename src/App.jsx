@@ -8,7 +8,6 @@ import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import LocomotiveScroll from "locomotive-scroll";
 import { gsap } from "gsap";
-import "./App.css";
 
 const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
@@ -39,10 +38,9 @@ const App = () => {
       overwrite: true,
     });
   }, [mousePosition]);
-
   return (
-    <div className="w-full h-screen bg-zinc-900 text-white">
-      <div className="custom-cursor bg-white h-[32px] w-[32px] rounded-full fixed top-0 left-0 pointer-events-none z-50 mix-blend-difference" />
+    <div className="w-full h-screen bg-zinc-900 text-white cursor-default md:cursor-none">
+      <div className="custom-cursor hidden md:inline-block bg-white h-[32px] w-[32px] rounded-full fixed top-0 left-0 pointer-events-none z-50 mix-blend-difference " />
       <Navbar />
       <Work />
       <Stripes />

@@ -9,7 +9,7 @@ function Card({ width, start, para, hover = "false", heading1, heading2 }) {
         backgroundColor: hover === "true" ? "#7443FF" : "#3E3E46",
         padding: "25px",
       }}
-      className={`bg-zinc-800 p-5 rounded-xl min-h-[30rem] flex flex-col justify-between  ${width}`}
+      className={`bg-zinc-800 p-5 rounded-xl min-h-[25rem] sm:min-h-[30rem] flex flex-col justify-between  ${width}`}
     >
       <div className="w-full">
         <div className="w-full flex justify-between items-center">

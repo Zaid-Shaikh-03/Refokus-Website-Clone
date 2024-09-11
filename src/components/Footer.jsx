@@ -4,12 +4,12 @@ function Footer() {
   return (
     <div>
       <div className="bg-zinc-900 w-full">
-        <div className="max-w-screen-xl mx-auto py-10 flex gap-10">
-          <div className="left w-3/5">
-            <h1 className="text-[12rem] font-semibold leading-none tracking-tight mb-2">
+        <div className="max-w-screen-xl mx-auto py-10 flex flex-col lg:flex-row gap-10 px-5 sm:px-0">
+          <div className="left w-full sm:w-3/5">
+            <h1 className="text-[5rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] font-semibold leading-none tracking-tight mb-2">
               refokus.
             </h1>
-            <div>
+            <div className="flex flex-wrap">
               {["Privacy Policy", "Cookie Policy", "Impressum", "Terms"].map(
                 (elem, index) => (
                   <a
@@ -24,7 +24,7 @@ function Footer() {
               )}
             </div>
           </div>
-          <div className="right w-2/5 flex gap-5">
+          <div className="right w-full sm:w-2/5 flex gap-5">
             <div className="w-1/3">
               <h4 className="mb-10 text-zinc-500 capitalize">Socials</h4>
               {["Instagram", "twitter (x?)", "LinkedIn"].map((elem, index) => (

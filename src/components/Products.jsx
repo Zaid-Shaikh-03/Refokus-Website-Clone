@@ -67,7 +67,7 @@ function Products() {
     {
       heading: "Yahoo!",
       description:
-        "We enhanced the New York Fashion Week, by creating a fully digital AR fashion experience for Yahoo and Maisie Wilen, featuring holographic 3D models and an integrated web shop.",
+        "We enhanced the New York Fashion Week, by creating a fully digital AR fashion experience for Yahoo and Maisie Wilen",
       live: true,
       case: true,
       bgimg:
@@ -91,7 +91,7 @@ function Products() {
           initial={{ y: pos, x: "-50%" }}
           animate={{ y: pos + `rem` }}
           transition={{ ease: [0.45, 0, 0.55, 1], duration: 0.4 }}
-          className="window absolute w-[36rem] h-[23rem] rounded-md bg-white left-[43%] overflow-hidden"
+          className="window absolute w-[12rem] sm:w-[36rem] h-[23rem] rounded-md bg-white left-[70%] sm:left-[43%] overflow-hidden"
         >
           <motion.div
             animate={{ y: -pos + `rem` }}

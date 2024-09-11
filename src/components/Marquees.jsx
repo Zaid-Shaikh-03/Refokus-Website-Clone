@@ -65,7 +65,7 @@ function Marquees() {
     ],
   ];
   return (
-    <div className="bg-zinc-900 pb-20 pt-44 w-full relative overflow-hidden ">
+    <div className="bg-zinc-900 pb-10 sm:pb-20 pt-10 sm:pt-44 w-full relative overflow-hidden ">
       {images.map((item, index) => (
         <Marquee
           key={index}
